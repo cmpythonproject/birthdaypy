@@ -245,21 +245,21 @@ h3{
 /*---- Bottom NAV ----- */
 .navbar {
   overflow: hidden;
-  background-color: #3D3D3D;  
+  background-color: #F6BEC9;  
   position: static;
   width: 100%;
 }
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #BEE3EC;
   color: black;
 }
 .navbar a.active {
