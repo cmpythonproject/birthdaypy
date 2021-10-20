@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Catrina McCoy - Python Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="specialStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body> 
+<!----- TOP LEFT LOGO // TOP RIGHT NAV BAR ----->    
+<section class="headerAstro">
+    <nav>
+        <a href="index.html"><img src="https://www.linkpicture.com/q/cake-removebg-preview.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="countdown.html">COUNTDOWN</a></li>
+                <li><a href="signs.html">SIGNS</a></li>
+                <li><a href="specials.html">SPECIALS</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">RESOURCES</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+</section>
+<!----- MAIN TITLE SECTION ----->
+<section class="main-special">
+    <h1>Birthday Food Specials</h1>
+    <p>The original plan for this page was to use python to web-scrape a list of restaurants from Google. Time restrictions did not allow for this and the page was used for testing Django databases alongside HTML and CSS features. I left it included as a special page.</p>
+    <p>Various restaurants across the East Coast offer special deals on your birthday. Check out the types of deals you can get on your birthday to make the day even better!</p>
+    <img src="https://www.linkpicture.com/q/arr_2.png">
+</section>
+<!--- TABLE SECTION --->
+<div class="container">
+  <h2></h2>
+  <ul class="responsive-table">
+    <!--- TITLES ---> 
+    <li class="table-header">
+      <div class="col col-1">Type</div>
+      <div class="col col-2">Restaurant Name</div>
+      <div class="col col-3">Deal</div>
+      <div class="col col-4">Link to Website</div>
+    </li>
+    <!--- ROWS --->  
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Breakfast</div>
+      <div class="col col-2" data-label="Restaurant Name">IHOP</div>
+      <div class="col col-3" data-label="Deal">Shortstack (4 pancakes)</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.ihop.com/en" style="color: blue;">IHOP's Link</a></div>
+    </li> 
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Breakfast</div>
+      <div class="col col-2" data-label="Restaurant Name">Waffle House</div>
+      <div class="col col-3" data-label="Deal">One waffle</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.wafflehouse.com/" style="color: blue;">Waffle House's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Breakfast</div>
+      <div class="col col-2" data-label="Restaurant Name">Starbucks</div>
+      <div class="col col-3" data-label="Deal">Any size drink</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.starbucks.com/" style="color: blue;">Starbuck's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Breakfast</div>
+      <div class="col col-2" data-label="Restaurant Name">Dunkin' Donuts</div>
+      <div class="col col-3" data-label="Deal">Any size drink</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.dunkindonuts.com/en" style="color: blue;">Dunkin' Donut's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Breakfast</div>
+      <div class="col col-2" data-label="Restaurant Name">Krispy Kreme</div>
+      <div class="col col-3" data-label="Deal">Dozen glazed donuts</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.krispykreme.com/" style="color: blue;">Krispy Kreme's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Lunch/Dinner</div>
+      <div class="col col-2" data-label="Restaurant Name">Moe's Southwest Grill</div>
+      <div class="col col-3" data-label="Deal">One burrito</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.moes.com/" style="color: blue;">Moe's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Lunch/Dinner</div>
+      <div class="col col-2" data-label="Restaurant Name">Jersey Mike's</div>
+      <div class="col col-3" data-label="Deal">Sub and 22 oz drink</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.jerseymikes.com/" style="color: blue;">Jersey Mike's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Lunch/Dinner</div>
+      <div class="col col-2" data-label="Restaurant Name">Red Robbin</div>
+      <div class="col col-3" data-label="Deal">One burger</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.redrobin.com/#whats-new" style="color: blue;">Red Robin's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Lunch/Dinner</div>
+      <div class="col col-2" data-label="Restaurant Name">Ruby Tuesday</div>
+      <div class="col col-3" data-label="Deal">One burger or salad</div>
+        <div class="col col-4" data-label="Link"><a href="https://m.rubytuesday.com/home" style="color: blue;">Ruby Tuesday's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Lunch/Dinner</div>
+      <div class="col col-2" data-label="Restaurant Name">Buffalo Wild Wings</div>
+      <div class="col col-3" data-label="Deal">Choice of wings</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.buffalowildwings.com/" style="color: blue;">Buffalo Wild Wing's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Snacks</div>
+      <div class="col col-2" data-label="Restaurant Name">Baskin Robins</div>
+      <div class="col col-3" data-label="Deal">One scoop of ice cream</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.baskinrobbins.com/en" style="color: blue;">Baskin Robbin's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Snacks</div>
+      <div class="col col-2" data-label="Restaurant Name">Friendly's</div>
+      <div class="col col-3" data-label="Deal">A medium sundae</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.friendlysrestaurants.com/" style="color: blue;">Friendly's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Snacks</div>
+      <div class="col col-2" data-label="Restaurant Name">Steak 'n Shake</div>
+      <div class="col col-3" data-label="Deal">One milkshake</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.steaknshake.com/" style="color: blue;">Steak 'n Shake's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Snacks</div>
+      <div class="col col-2" data-label="Restaurant Name">BJ's Brewhouse</div>
+      <div class="col col-3" data-label="Deal">One pizookie</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.bjsrestaurants.com/" style="color: blue;">BJ's Brewhouse's Link</a></div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Type">Snacks</div>
+      <div class="col col-2" data-label="Restaurant Name">Auntie Anne's</div>
+      <div class="col col-3" data-label="Deal">One pretzel</div>
+        <div class="col col-4" data-label="Link"><a href="https://www.auntieannes.com/" style="color: blue;">Auntie Anne's Link</a></div>
+    </li>
+  </ul>
+<p align="center" style="padding-bottom:15px"><a href="https://www.thrillist.com/eat/nation/free-food-on-your-birthday-restaurants" class="hero-btn">Click For More Deals!</a></p>
+</div> 
+
+<!----- BOTTOM NAV ----->
+<div class="navbar" id="myNavbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="countdown.html">Countdown</a>
+  <a href="signs.html">Signs</a>
+  <a href="specials.html">Specials</a>
+  <a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">Resources</a>    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!----- JavaScript for Bottom Nav Bar ----->    
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+</script>
+<!----- JavaScript for Mobile Menu ----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0px";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    } 
+</script>
+</body>    
+</html>

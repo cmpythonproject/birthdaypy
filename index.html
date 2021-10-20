@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Catrina McCoy - Python Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!----- TOP LEFT LOGO // TOP RIGHT NAV BAR ----->    
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="https://www.linkpicture.com/q/cake-removebg-preview.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="countdown.html">COUNTDOWN</a></li>
+                <li><a href="signs.html">SIGNS</a></li>
+                <li><a href="specials.html">SPECIALS</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">RESOURCES</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav> 
+<!----- MAIN TITLE SECTION ----->
+<div class="text-box">
+    <h1>Python Birthday Project</h1>
+    <p>This project features two instances of programming with python. This project first takes the user's date of birth as input then identifies the user's age and generates a countdown sequence until their birthday. This project also identifies the user's astrological sign.</p>
+    <a href="countdown.html" class="hero-btn">Try It Here!</a>
+</div>
+</section>
+<!----- PROGRAMMING LANGUAGES SECTION ----->
+<section class="who">
+    <h1>Programming Languages</h1>
+    <p>This project primarily use python but also includes HTML and CSS.</p>
+        
+    <div class="row">
+        <div class="who-col">
+            <h3>PYTHON</h3>
+            <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. This project uses Python for data collection, data storage, calculations, web-scraping, and back-end usability.</p>
+        </div>
+        <div class="who-col">
+            <h3>HTML</h3>
+            <p>Hypertext Markup Language is a standardized system for tagging text files to achieve font, graphic, and hyperlink effects on World Wide Web pages. This project uses HTML for structure.</p>
+        </div>
+        <div class="who-col">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets is the language for describing the presentation of Web pages. This project uses CSS for styling.</p>
+        </div>
+    </div>
+</section>
+<!----- PROJECT FEATURES SECTION ----->
+<section class="pro">
+    <h1>Project Features</h1>
+    <p>Check out these wonderful features!</p>
+
+    <div class="row">
+        <div class="pro-col">
+            <img src="https://www.linkpicture.com/q/newcount.png">
+            <h3>Countdown Timer</h3>
+            <p>Start the countdown to your next birthday.</p>
+            <p><a href="countdown.html" class="hero-btn">Begin Countdown!</a></p>
+        </div>
+        <div class="pro-col">
+            <img src="https://www.linkpicture.com/q/astro1.png">
+            <h3>Astrological Signs</h3>
+            <p>There are 12 Zodiac signs on the calandar.</p>
+            <p><a href="signs.html" class="hero-btn">Find Your Sign!</a></p>
+        </div>
+        <div class="pro-col">
+            <img src="https://www.linkpicture.com/q/save-modified.png">
+            <h3>Specials</h3>
+            <p>Businesses offer discounts on your birthday.</p>
+            <p><a href="specials.html" class="hero-btn">See Deals!</a></p>
+        </div>
+    </div>
+</section>
+<!----- BOTTOM NAV ----->
+<div class="navbar" id="myNavbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="countdown.html">Countdown</a>
+  <a href="signs.html">Signs</a>
+  <a href="specials.html">Specials</a>
+  <a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">Resources</a>    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!----- JavaScript for Bottom Nav Bar ----->    
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+</script>
+<!----- JavaScript for Mobile Menu ----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0px";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    } 
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Catrina McCoy - Python Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="countStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!----- TOP LEFT LOGO // TOP RIGHT NAV BAR ----->    
+<section class="headerAstro">
+    <nav>
+        <a href="index.html"><img src="https://www.linkpicture.com/q/cake-removebg-preview.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="countdown.html">COUNTDOWN</a></li>
+                <li><a href="signs.html">SIGNS</a></li>
+                <li><a href="specials.html">SPECIALS</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">RESOURCES</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+</section>
+<!----- MAIN TITLE SECTION ----->
+<section class="main-sign">
+    <h1>Birthday Countdown</h1>
+    <p>Using Python, this program recieves and formats the user's input, then calculates the user's age and time until the user's birthday. The program then displays a real-time countdown until the user's birthday.</p>
+    <p>Every year deserves a celebration. Are you ready for your birthday? Execute the program below to begin your countdown timer!</p>
+</section>
+<!----- INTERPRETER SECTION ----->
+<p align="center"><iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@catacademy/birthdayCountdown?lite=true"></iframe></p>
+<!----- BOTTOM NAV ----->
+<div class="navbar" id="myNavbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="countdown.html">Countdown</a>
+  <a href="signs.html">Signs</a>
+  <a href="specials.html">Specials</a>
+  <a href="https://docs.google.com/document/d/e/2PACX-1vTJFTFMlHCDj7_1w6jDX1CVBMFczCWVHZ0hEcl0cWageoVlU5rKGl8BzSotkVY3hkisClBbtQLB_Blz/pub?embedded=true">Resources</a>    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!----- JAVASCRIPT FOR BOTTOM NAV ----->    
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+</script>
+<!----- JAVASCRIPT FOR MOBILE MENU ----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0px";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    } 
+</script>
+</body>
+</html>
